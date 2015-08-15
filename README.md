@@ -31,6 +31,20 @@ Or use as jQuery plugin (if you import jQuery before):
 $('#colorfulCharsContainer').ColorfulIt('Hello, world!');
 ```
 
+## api
+
+- ColorfulIt(ele, str, options)
+
+  options:
+    * seed: seed colors used to colorful chars, like [[255,255,0],[0,255,255],...]
+    * stepNum: insert colors between every two colors in seed to get the Colors to be used
+    * interval: speed of the change of colors, in millisecond
+
+- ColorfulIt.prototype
+
+    * run() - after stoped, use it to restart changing color
+    * stop() - stop changing color
+
 ## test
 
 ```hash
