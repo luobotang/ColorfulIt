@@ -1,0 +1,28 @@
+{
+  "name": "colorful-it",
+  "version": "0.1.0",
+  "description": "colorful chars",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "start test/test.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luobotang/ColorfulIt.git"
+  },
+  "keywords": [
+    "colurful"
+  ],
+  "author": "luobotang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luobotang/ColorfulIt/issues"
+  },
+  "homepage": "https://github.com/luobotang/ColorfulIt#readme",
+  "devDependencies": {
+    "jquery": "^1.11.3"
+  }
+}

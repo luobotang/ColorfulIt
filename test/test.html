@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ColorfulIt Test</title>
+	<style>
+		* { margin: 0; padding: 0; }
+		body { font: 14px/2 arial, "Microsoft Yahei", sans-serif; }
+		p { margin: 20px; padding: 10px 20px; background: #666; }
+	</style>
+</head>
+<body>
+	<p id="test1"></p>
+	<p id="test2"></p>
+	<p id="test3"></p>
+	<p id="test4">Use as jQuery plugin here...</p>
+	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="../index.js"></script>
+	<script>
+		new ColorfulIt(document.getElementById('test1'), 'Hello, world!');
+		ColorfulIt(document.getElementById('test2'), '欢迎使用 ColorfulIt！', {
+			seed: [
+				[255,0,0], // red
+				[255,255,0]  // yellow
+			]
+		});
+		ColorfulIt(document.getElementById('test3'), 'Hello, a slower world!', {
+			interval: 200 // slower
+		});
+
+		// Used as jQuery plugin
+		$('#test4').ColorfulIt($('#test4').text(), {
+			seed: [
+				[255,255,0],
+				[0,255,255]
+			],
+			stepNum: 5,
+			interval: 100
+		});
+	</script>
+</body>
+</html>
